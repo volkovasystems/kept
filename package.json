@@ -1,0 +1,25 @@
+{
+  "name": "kept",
+  "version": "0.0.0",
+  "description": "Checks if the file exists.",
+  "main": "kept.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volkovasystems/kept.git"
+  },
+  "keywords": [
+    "check",
+    "file",
+    "exists",
+    "kept"
+  ],
+  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/volkovasystems/kept/issues"
+  },
+  "homepage": "https://github.com/volkovasystems/kept#readme"
+}

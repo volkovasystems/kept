@@ -47,18 +47,31 @@
 
 	@include:
 		{
-			"fs": "fs"
+			"fs": "fs",
+			"harden": "harden",
+			"letgo": "letgo",
+			"optfor": "optfor"
 		}
 	@end-include
 */
 
 var fs = require( "fs" );
+var harden = require( "harden" );
+var letgo = require( "letgo" );
+var optfor = require( "optfor" );
 
-var kept = function kept( path ){
+harden( "EXIST", "exist" );
+harden( "READ", "read" );
+harden( "WRITE", "write" );
+harden( "EXECUTE", "execute" );
+
+var kept = function kept( path, mode, synchronous ){
 	/*;
 		@meta-configuration:
 			{
-				"path:require": "string"
+				"path:require": "string",
+				"mode": "string"
+				"synchronous": "boolean"
 			}
 		@end-meta-configuration
 	*/
@@ -69,16 +82,60 @@ var kept = function kept( path ){
 		throw new Error( "invalid path" );
 	}
 
-	try{
-		var mode = fs.constants? fs.constants.F_OK : fs.F_OK;
+	mode = optfor( arguments, function check( parameter ){
+		return parameter == EXIST ||
+			parameter == READ ||
+			parameter == WRITE ||
+			parameter == EXECUTE;
+	} );
 
-		fs.accessSync( path, mode );
+	mode = kept.resolveMode( mode );
 
-	}catch( error ){
-		return false;
+	synchronous = optfor( arguments, "boolean" );
+
+	if( synchronous ){
+		try{
+			fs.accessSync( path, mode );
+
+		}catch( error ){
+			return false;
+		}
+
+		return true;
+
+	}else{
+		var catcher = letgo.bind( this )( );
+
+		fs.access( path, mode,
+			function onAccess( error ){
+				if( error ){
+					catcher.cache.callback( null, false );
+
+				}else{
+					catcher.cache.callback( null,  true );
+				}
+			} );
+
+		return catcher;
 	}
-
-	return true;
 };
+
+harden( "resolveMode", function resolveMode( mode ){
+	var _mode = fs.constants? fs.constants : fs;
+
+	switch( mode ){
+		case READ:
+			return _mode.R_OK;
+
+		case WRITE:
+			return _mode.W_OK;
+
+		case EXECUTE:
+			return _mode.X_OK;
+
+		default:
+			return _mode.F_OK;
+	}
+}, kept );
 
 module.exports = kept;

@@ -1,5 +1,3 @@
-"use strict";
-
 /*;
 	@module-license:
 		The MIT License (MIT)
@@ -50,7 +48,8 @@
 			"fs": "fs",
 			"harden": "harden",
 			"letgo": "letgo",
-			"optfor": "optfor"
+			"optfor": "optfor",
+			"zelf": "zelf"
 		}
 	@end-include
 */
@@ -59,6 +58,7 @@ var fs = require( "fs" );
 var harden = require( "harden" );
 var letgo = require( "letgo" );
 var optfor = require( "optfor" );
+var zelf = require( "zelf" );
 
 harden( "EXIST", "exist" );
 harden( "READ", "read" );
@@ -102,7 +102,9 @@ var kept = function kept( path, mode, synchronous ){
 		return true;
 
 	}else{
-		var catcher = letgo.bind( this )( );
+		var self = zelf( this );
+
+		var catcher = letgo.bind( self )( );
 
 		fs.access( path, mode,
 			function onAccess( error ){

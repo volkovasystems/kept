@@ -76,9 +76,7 @@ var kept = function kept( path, mode, synchronous ){
 		@end-meta-configuration
 	*/
 
-	if( typeof path != "string" ||
-		!path )
-	{
+	if( typeof path != "string" || !path ){
 		throw new Error( "invalid path" );
 	}
 
@@ -121,20 +119,20 @@ var kept = function kept( path, mode, synchronous ){
 };
 
 harden( "resolveMode", function resolveMode( mode ){
-	var _mode = fs.constants? fs.constants : fs;
+	var type = fs.constants? fs.constants : fs;
 
 	switch( mode ){
 		case READ:
-			return _mode.R_OK;
+			return type.R_OK;
 
 		case WRITE:
-			return _mode.W_OK;
+			return type.W_OK;
 
 		case EXECUTE:
-			return _mode.X_OK;
+			return type.X_OK;
 
 		default:
-			return _mode.F_OK;
+			return type.F_OK;
 	}
 }, kept );
 

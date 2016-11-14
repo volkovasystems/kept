@@ -46,26 +46,32 @@
 	@include:
 		{
 			"fs": "fs",
+			"falzy": "falzy",
 			"harden": "harden",
 			"letgo": "letgo",
 			"optfor": "optfor",
+			"protype": "protype",
+			"raze": "raze",
 			"zelf": "zelf"
 		}
 	@end-include
 */
 
-var fs = require( "fs" );
-var harden = require( "harden" );
-var letgo = require( "letgo" );
-var optfor = require( "optfor" );
-var zelf = require( "zelf" );
+const fs = require( "fs" );
+const falzy = require( "falzy" );
+const harden = require( "harden" );
+const letgo = require( "letgo" );
+const optfor = require( "optfor" );
+const protype = require( "protype" );
+const raze = require( "raze" );
+const zelf = require( "zelf" );
 
 harden( "EXIST", "exist" );
 harden( "READ", "read" );
 harden( "WRITE", "write" );
 harden( "EXECUTE", "execute" );
 
-var kept = function kept( path, mode, synchronous ){
+const kept = function kept( path, mode, synchronous ){
 	/*;
 		@meta-configuration:
 			{
@@ -76,20 +82,42 @@ var kept = function kept( path, mode, synchronous ){
 		@end-meta-configuration
 	*/
 
-	if( typeof path != "string" || !path ){
+	if( !protype( path, STRING ) || falzy( path ) ){
 		throw new Error( "invalid path" );
 	}
 
-	mode = optfor( arguments, function check( parameter ){
-		return parameter == EXIST ||
-			parameter == READ ||
-			parameter == WRITE ||
-			parameter == EXECUTE;
-	} );
+	let parameter = raze( arguments );
 
-	mode = kept.resolveMode( mode );
+	mode = optfor( parameter, function check( parameter ){
+		return parameter === EXIST ||
+			parameter === READ ||
+			parameter === WRITE ||
+			parameter === EXECUTE;
+	} ) || EXIST;
 
-	synchronous = optfor( arguments, "boolean" );
+	let type = fs.constants? fs.constants : fs;
+	switch( mode ){
+		case READ:
+			mode = type.R_OK;
+			break;
+
+		case WRITE:
+			mode = type.W_OK;
+			break;
+
+		case EXECUTE:
+			mode = type.X_OK;
+			break;
+
+		case EXIST:
+			mode = type.F_OK;
+			break;
+
+		default:
+			throw new Error( "invalid mode" );
+	}
+
+	synchronous = optfor( parameter, BOOLEAN ) || false;
 
 	if( synchronous ){
 		try{
@@ -102,9 +130,9 @@ var kept = function kept( path, mode, synchronous ){
 		return true;
 
 	}else{
-		var self = zelf( this );
+		let self = zelf( this );
 
-		var catcher = letgo.bind( self )( );
+		let catcher = letgo.bind( self )( );
 
 		fs.access( path, mode,
 			function onAccess( error ){
@@ -119,23 +147,5 @@ var kept = function kept( path, mode, synchronous ){
 		return catcher;
 	}
 };
-
-harden( "resolveMode", function resolveMode( mode ){
-	var type = fs.constants? fs.constants : fs;
-
-	switch( mode ){
-		case READ:
-			return type.R_OK;
-
-		case WRITE:
-			return type.W_OK;
-
-		case EXECUTE:
-			return type.X_OK;
-
-		default:
-			return type.F_OK;
-	}
-}, kept );
 
 module.exports = kept;

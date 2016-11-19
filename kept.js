@@ -45,11 +45,11 @@
 
 	@include:
 		{
+			"depher": "depher",
 			"fs": "fs",
 			"falzy": "falzy",
 			"harden": "harden",
 			"letgo": "letgo",
-			"optfor": "optfor",
 			"protype": "protype",
 			"raze": "raze",
 			"zelf": "zelf"
@@ -57,11 +57,11 @@
 	@end-include
 */
 
+const depher = require( "depher" );
 const fs = require( "fs" );
 const falzy = require( "falzy" );
 const harden = require( "harden" );
 const letgo = require( "letgo" );
-const optfor = require( "optfor" );
 const protype = require( "protype" );
 const raze = require( "raze" );
 const zelf = require( "zelf" );
@@ -88,36 +88,23 @@ const kept = function kept( path, mode, synchronous ){
 
 	let parameter = raze( arguments );
 
-	mode = optfor( parameter, function check( parameter ){
-		return parameter === EXIST ||
-			parameter === READ ||
-			parameter === WRITE ||
-			parameter === EXECUTE;
-	} ) || EXIST;
+	mode = depher( parameter, [ EXIST, READ, WRITE, EXECUTE ], EXIST );
 
 	let type = fs.constants? fs.constants : fs;
-	switch( mode ){
-		case READ:
-			mode = type.R_OK;
-			break;
+	if( mode == READ ){
+		mode = type.R_OK;
 
-		case WRITE:
-			mode = type.W_OK;
-			break;
+	}else if( mode == WRITE ){
+		mode = type.W_OK;
 
-		case EXECUTE:
-			mode = type.X_OK;
-			break;
+	}else if( mode == EXECUTE ){
+		mode = type.X_OK;
 
-		case EXIST:
-			mode = type.F_OK;
-			break;
-
-		default:
-			throw new Error( "invalid mode" );
+	}else if( mode == EXIST ){
+		mode = type.F_OK;
 	}
 
-	synchronous = optfor( parameter, BOOLEAN ) || false;
+	synchronous = depher( parameter, BOOLEAN, false );
 
 	if( synchronous ){
 		try{

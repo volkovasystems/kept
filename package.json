@@ -1,6 +1,6 @@
 {
   "name": "kept",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Checks if the file exists.",
   "main": "kept.js",
   "scripts": {
@@ -23,10 +23,10 @@
   },
   "homepage": "https://github.com/volkovasystems/kept#readme",
   "dependencies": {
+    "depher": "^0.2.0",
     "falzy": "^0.3.0",
     "harden": "^0.6.0",
     "letgo": "^0.1.0",
-    "optfor": "^0.3.0",
     "protype": "^0.2.0",
     "raze": "^0.3.0",
     "zelf": "^0.2.0"

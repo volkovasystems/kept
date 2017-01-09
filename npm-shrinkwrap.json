@@ -1,6 +1,6 @@
 {
   "name": "kept",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "dependencies": {
     "arid": {
       "version": "0.4.0",
@@ -313,9 +313,9 @@
       "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
     },
     "called": {
-      "version": "0.5.0",
+      "version": "0.6.0",
       "from": "called@latest",
-      "resolved": "https://registry.npmjs.org/called/-/called-0.5.0.tgz",
+      "resolved": "https://registry.npmjs.org/called/-/called-0.6.0.tgz",
       "dependencies": {
         "harden": {
           "version": "0.12.0",
@@ -340,9 +340,9 @@
           }
         },
         "protype": {
-          "version": "0.7.0",
+          "version": "0.8.0",
           "from": "protype@latest",
-          "resolved": "https://registry.npmjs.org/protype/-/protype-0.7.0.tgz",
+          "resolved": "https://registry.npmjs.org/protype/-/protype-0.8.0.tgz",
           "dependencies": {
             "babel-runtime": {
               "version": "6.20.0",
@@ -400,7 +400,7 @@
             },
             "harden": {
               "version": "0.12.0",
-              "from": "harden@latest",
+              "from": "harden@>=0.12.0 <0.13.0",
               "resolved": "https://registry.npmjs.org/harden/-/harden-0.12.0.tgz",
               "dependencies": {
                 "babel-runtime": {
@@ -734,6 +734,211 @@
               "version": "2.4.1",
               "from": "core-js@>=2.4.0 <3.0.0",
               "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+            },
+            "regenerator-runtime": {
+              "version": "0.10.1",
+              "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+              "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+            }
+          }
+        }
+      }
+    },
+    "cobralize": {
+      "version": "0.3.0",
+      "from": "cobralize@latest",
+      "resolved": "https://registry.npmjs.org/cobralize/-/cobralize-0.3.0.tgz",
+      "dependencies": {
+        "falzy": {
+          "version": "0.7.0",
+          "from": "falzy@latest",
+          "resolved": "https://registry.npmjs.org/falzy/-/falzy-0.7.0.tgz",
+          "dependencies": {
+            "babel-runtime": {
+              "version": "6.20.0",
+              "from": "babel-runtime@>=6.20.0 <7.0.0",
+              "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+            },
+            "core-js": {
+              "version": "2.4.1",
+              "from": "core-js@>=2.4.0 <3.0.0",
+              "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+            },
+            "protype": {
+              "version": "0.7.0",
+              "from": "protype@>=0.7.0 <0.8.0",
+              "resolved": "https://registry.npmjs.org/protype/-/protype-0.7.0.tgz",
+              "dependencies": {
+                "babel-runtime": {
+                  "version": "6.20.0",
+                  "from": "babel-runtime@>=6.20.0 <7.0.0",
+                  "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                },
+                "cemento": {
+                  "version": "0.5.0",
+                  "from": "cemento@>=0.5.0 <0.6.0",
+                  "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.5.0.tgz",
+                  "dependencies": {
+                    "babel-runtime": {
+                      "version": "6.20.0",
+                      "from": "babel-runtime@>=6.20.0 <7.0.0",
+                      "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                    },
+                    "core-js": {
+                      "version": "2.4.1",
+                      "from": "core-js@>=2.4.0 <3.0.0",
+                      "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                    },
+                    "harden": {
+                      "version": "0.12.0",
+                      "from": "harden@>=0.12.0 <0.13.0",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.12.0.tgz",
+                      "dependencies": {
+                        "babel-runtime": {
+                          "version": "6.20.0",
+                          "from": "babel-runtime@>=6.20.0 <7.0.0",
+                          "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                        },
+                        "core-js": {
+                          "version": "2.4.1",
+                          "from": "core-js@>=2.4.0 <3.0.0",
+                          "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                        },
+                        "regenerator-runtime": {
+                          "version": "0.10.1",
+                          "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                          "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                        }
+                      }
+                    },
+                    "regenerator-runtime": {
+                      "version": "0.10.1",
+                      "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                      "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                    }
+                  }
+                },
+                "core-js": {
+                  "version": "2.4.1",
+                  "from": "core-js@>=2.4.0 <3.0.0",
+                  "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                },
+                "harden": {
+                  "version": "0.12.0",
+                  "from": "harden@latest",
+                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.12.0.tgz",
+                  "dependencies": {
+                    "babel-runtime": {
+                      "version": "6.20.0",
+                      "from": "babel-runtime@>=6.20.0 <7.0.0",
+                      "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                    },
+                    "core-js": {
+                      "version": "2.4.1",
+                      "from": "core-js@>=2.4.0 <3.0.0",
+                      "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                    },
+                    "regenerator-runtime": {
+                      "version": "0.10.1",
+                      "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                      "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                    }
+                  }
+                },
+                "regenerator-runtime": {
+                  "version": "0.10.1",
+                  "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                  "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                }
+              }
+            },
+            "regenerator-runtime": {
+              "version": "0.10.1",
+              "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+              "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+            }
+          }
+        },
+        "protype": {
+          "version": "0.7.0",
+          "from": "protype@latest",
+          "resolved": "https://registry.npmjs.org/protype/-/protype-0.7.0.tgz",
+          "dependencies": {
+            "babel-runtime": {
+              "version": "6.20.0",
+              "from": "babel-runtime@>=6.20.0 <7.0.0",
+              "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+            },
+            "cemento": {
+              "version": "0.5.0",
+              "from": "cemento@>=0.5.0 <0.6.0",
+              "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.5.0.tgz",
+              "dependencies": {
+                "babel-runtime": {
+                  "version": "6.20.0",
+                  "from": "babel-runtime@>=6.20.0 <7.0.0",
+                  "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                },
+                "core-js": {
+                  "version": "2.4.1",
+                  "from": "core-js@>=2.4.0 <3.0.0",
+                  "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                },
+                "harden": {
+                  "version": "0.12.0",
+                  "from": "harden@>=0.12.0 <0.13.0",
+                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.12.0.tgz",
+                  "dependencies": {
+                    "babel-runtime": {
+                      "version": "6.20.0",
+                      "from": "babel-runtime@>=6.20.0 <7.0.0",
+                      "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                    },
+                    "core-js": {
+                      "version": "2.4.1",
+                      "from": "core-js@>=2.4.0 <3.0.0",
+                      "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                    },
+                    "regenerator-runtime": {
+                      "version": "0.10.1",
+                      "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                      "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                    }
+                  }
+                },
+                "regenerator-runtime": {
+                  "version": "0.10.1",
+                  "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                  "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                }
+              }
+            },
+            "core-js": {
+              "version": "2.4.1",
+              "from": "core-js@>=2.4.0 <3.0.0",
+              "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+            },
+            "harden": {
+              "version": "0.12.0",
+              "from": "harden@latest",
+              "resolved": "https://registry.npmjs.org/harden/-/harden-0.12.0.tgz",
+              "dependencies": {
+                "babel-runtime": {
+                  "version": "6.20.0",
+                  "from": "babel-runtime@>=6.20.0 <7.0.0",
+                  "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                },
+                "core-js": {
+                  "version": "2.4.1",
+                  "from": "core-js@>=2.4.0 <3.0.0",
+                  "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                },
+                "regenerator-runtime": {
+                  "version": "0.10.1",
+                  "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                  "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                }
+              }
             },
             "regenerator-runtime": {
               "version": "0.10.1",
@@ -1149,6 +1354,233 @@
               "version": "2.4.1",
               "from": "core-js@>=2.4.0 <3.0.0",
               "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+            },
+            "regenerator-runtime": {
+              "version": "0.10.1",
+              "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+              "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+            }
+          }
+        }
+      }
+    },
+    "disdo": {
+      "version": "0.3.0",
+      "from": "disdo@latest",
+      "resolved": "https://registry.npmjs.org/disdo/-/disdo-0.3.0.tgz",
+      "dependencies": {
+        "falzy": {
+          "version": "0.7.0",
+          "from": "falzy@latest",
+          "resolved": "https://registry.npmjs.org/falzy/-/falzy-0.7.0.tgz",
+          "dependencies": {
+            "babel-runtime": {
+              "version": "6.20.0",
+              "from": "babel-runtime@>=6.20.0 <7.0.0",
+              "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+            },
+            "core-js": {
+              "version": "2.4.1",
+              "from": "core-js@>=2.4.0 <3.0.0",
+              "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+            },
+            "protype": {
+              "version": "0.7.0",
+              "from": "protype@>=0.7.0 <0.8.0",
+              "resolved": "https://registry.npmjs.org/protype/-/protype-0.7.0.tgz",
+              "dependencies": {
+                "babel-runtime": {
+                  "version": "6.20.0",
+                  "from": "babel-runtime@>=6.20.0 <7.0.0",
+                  "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                },
+                "cemento": {
+                  "version": "0.5.0",
+                  "from": "cemento@>=0.5.0 <0.6.0",
+                  "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.5.0.tgz",
+                  "dependencies": {
+                    "babel-runtime": {
+                      "version": "6.20.0",
+                      "from": "babel-runtime@>=6.20.0 <7.0.0",
+                      "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                    },
+                    "core-js": {
+                      "version": "2.4.1",
+                      "from": "core-js@>=2.4.0 <3.0.0",
+                      "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                    },
+                    "harden": {
+                      "version": "0.12.0",
+                      "from": "harden@>=0.12.0 <0.13.0",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.12.0.tgz",
+                      "dependencies": {
+                        "babel-runtime": {
+                          "version": "6.20.0",
+                          "from": "babel-runtime@>=6.20.0 <7.0.0",
+                          "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                        },
+                        "core-js": {
+                          "version": "2.4.1",
+                          "from": "core-js@>=2.4.0 <3.0.0",
+                          "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                        },
+                        "regenerator-runtime": {
+                          "version": "0.10.1",
+                          "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                          "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                        }
+                      }
+                    },
+                    "regenerator-runtime": {
+                      "version": "0.10.1",
+                      "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                      "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                    }
+                  }
+                },
+                "core-js": {
+                  "version": "2.4.1",
+                  "from": "core-js@>=2.4.0 <3.0.0",
+                  "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                },
+                "harden": {
+                  "version": "0.12.0",
+                  "from": "harden@latest",
+                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.12.0.tgz",
+                  "dependencies": {
+                    "babel-runtime": {
+                      "version": "6.20.0",
+                      "from": "babel-runtime@>=6.20.0 <7.0.0",
+                      "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                    },
+                    "core-js": {
+                      "version": "2.4.1",
+                      "from": "core-js@>=2.4.0 <3.0.0",
+                      "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                    },
+                    "regenerator-runtime": {
+                      "version": "0.10.1",
+                      "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                      "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                    }
+                  }
+                },
+                "regenerator-runtime": {
+                  "version": "0.10.1",
+                  "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                  "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                }
+              }
+            },
+            "regenerator-runtime": {
+              "version": "0.10.1",
+              "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+              "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+            }
+          }
+        },
+        "harden": {
+          "version": "0.12.0",
+          "from": "harden@latest",
+          "resolved": "https://registry.npmjs.org/harden/-/harden-0.12.0.tgz",
+          "dependencies": {
+            "babel-runtime": {
+              "version": "6.20.0",
+              "from": "babel-runtime@>=6.20.0 <7.0.0",
+              "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+            },
+            "core-js": {
+              "version": "2.4.1",
+              "from": "core-js@>=2.4.0 <3.0.0",
+              "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+            },
+            "regenerator-runtime": {
+              "version": "0.10.1",
+              "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+              "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+            }
+          }
+        },
+        "protype": {
+          "version": "0.7.0",
+          "from": "protype@latest",
+          "resolved": "https://registry.npmjs.org/protype/-/protype-0.7.0.tgz",
+          "dependencies": {
+            "babel-runtime": {
+              "version": "6.20.0",
+              "from": "babel-runtime@>=6.20.0 <7.0.0",
+              "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+            },
+            "cemento": {
+              "version": "0.5.0",
+              "from": "cemento@>=0.5.0 <0.6.0",
+              "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.5.0.tgz",
+              "dependencies": {
+                "babel-runtime": {
+                  "version": "6.20.0",
+                  "from": "babel-runtime@>=6.20.0 <7.0.0",
+                  "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                },
+                "core-js": {
+                  "version": "2.4.1",
+                  "from": "core-js@>=2.4.0 <3.0.0",
+                  "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                },
+                "harden": {
+                  "version": "0.12.0",
+                  "from": "harden@>=0.12.0 <0.13.0",
+                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.12.0.tgz",
+                  "dependencies": {
+                    "babel-runtime": {
+                      "version": "6.20.0",
+                      "from": "babel-runtime@>=6.20.0 <7.0.0",
+                      "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                    },
+                    "core-js": {
+                      "version": "2.4.1",
+                      "from": "core-js@>=2.4.0 <3.0.0",
+                      "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                    },
+                    "regenerator-runtime": {
+                      "version": "0.10.1",
+                      "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                      "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                    }
+                  }
+                },
+                "regenerator-runtime": {
+                  "version": "0.10.1",
+                  "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                  "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                }
+              }
+            },
+            "core-js": {
+              "version": "2.4.1",
+              "from": "core-js@>=2.4.0 <3.0.0",
+              "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+            },
+            "harden": {
+              "version": "0.12.0",
+              "from": "harden@latest",
+              "resolved": "https://registry.npmjs.org/harden/-/harden-0.12.0.tgz",
+              "dependencies": {
+                "babel-runtime": {
+                  "version": "6.20.0",
+                  "from": "babel-runtime@>=6.20.0 <7.0.0",
+                  "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                },
+                "core-js": {
+                  "version": "2.4.1",
+                  "from": "core-js@>=2.4.0 <3.0.0",
+                  "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                },
+                "regenerator-runtime": {
+                  "version": "0.10.1",
+                  "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                  "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                }
+              }
             },
             "regenerator-runtime": {
               "version": "0.10.1",
@@ -1899,24 +2331,19 @@
       }
     },
     "harden": {
-      "version": "0.12.0",
+      "version": "0.13.0",
       "from": "harden@latest",
-      "resolved": "https://registry.npmjs.org/harden/-/harden-0.12.0.tgz"
+      "resolved": "https://registry.npmjs.org/harden/-/harden-0.13.0.tgz"
     },
-    "kount": {
-      "version": "0.4.0",
-      "from": "kount@latest",
-      "resolved": "https://registry.npmjs.org/kount/-/kount-0.4.0.tgz"
-    },
-    "letgo": {
-      "version": "0.5.0",
-      "from": "letgo@latest",
-      "resolved": "https://registry.npmjs.org/letgo/-/letgo-0.5.0.tgz",
+    "kein": {
+      "version": "0.2.0",
+      "from": "kein@latest",
+      "resolved": "https://registry.npmjs.org/kein/-/kein-0.2.0.tgz",
       "dependencies": {
-        "harden": {
-          "version": "0.12.0",
-          "from": "harden@latest",
-          "resolved": "https://registry.npmjs.org/harden/-/harden-0.12.0.tgz",
+        "falzy": {
+          "version": "0.7.0",
+          "from": "falzy@latest",
+          "resolved": "https://registry.npmjs.org/falzy/-/falzy-0.7.0.tgz",
           "dependencies": {
             "babel-runtime": {
               "version": "6.20.0",
@@ -1928,6 +2355,94 @@
               "from": "core-js@>=2.4.0 <3.0.0",
               "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
             },
+            "protype": {
+              "version": "0.7.0",
+              "from": "protype@>=0.7.0 <0.8.0",
+              "resolved": "https://registry.npmjs.org/protype/-/protype-0.7.0.tgz",
+              "dependencies": {
+                "babel-runtime": {
+                  "version": "6.20.0",
+                  "from": "babel-runtime@>=6.20.0 <7.0.0",
+                  "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                },
+                "cemento": {
+                  "version": "0.5.0",
+                  "from": "cemento@>=0.5.0 <0.6.0",
+                  "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.5.0.tgz",
+                  "dependencies": {
+                    "babel-runtime": {
+                      "version": "6.20.0",
+                      "from": "babel-runtime@>=6.20.0 <7.0.0",
+                      "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                    },
+                    "core-js": {
+                      "version": "2.4.1",
+                      "from": "core-js@>=2.4.0 <3.0.0",
+                      "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                    },
+                    "harden": {
+                      "version": "0.12.0",
+                      "from": "harden@>=0.12.0 <0.13.0",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.12.0.tgz",
+                      "dependencies": {
+                        "babel-runtime": {
+                          "version": "6.20.0",
+                          "from": "babel-runtime@>=6.20.0 <7.0.0",
+                          "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                        },
+                        "core-js": {
+                          "version": "2.4.1",
+                          "from": "core-js@>=2.4.0 <3.0.0",
+                          "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                        },
+                        "regenerator-runtime": {
+                          "version": "0.10.1",
+                          "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                          "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                        }
+                      }
+                    },
+                    "regenerator-runtime": {
+                      "version": "0.10.1",
+                      "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                      "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                    }
+                  }
+                },
+                "core-js": {
+                  "version": "2.4.1",
+                  "from": "core-js@>=2.4.0 <3.0.0",
+                  "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                },
+                "harden": {
+                  "version": "0.12.0",
+                  "from": "harden@latest",
+                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.12.0.tgz",
+                  "dependencies": {
+                    "babel-runtime": {
+                      "version": "6.20.0",
+                      "from": "babel-runtime@>=6.20.0 <7.0.0",
+                      "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                    },
+                    "core-js": {
+                      "version": "2.4.1",
+                      "from": "core-js@>=2.4.0 <3.0.0",
+                      "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                    },
+                    "regenerator-runtime": {
+                      "version": "0.10.1",
+                      "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                      "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                    }
+                  }
+                },
+                "regenerator-runtime": {
+                  "version": "0.10.1",
+                  "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                  "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                }
+              }
+            },
             "regenerator-runtime": {
               "version": "0.10.1",
               "from": "regenerator-runtime@>=0.10.0 <0.11.0",
@@ -1936,9 +2451,9 @@
           }
         },
         "protype": {
-          "version": "0.7.0",
+          "version": "0.8.0",
           "from": "protype@latest",
-          "resolved": "https://registry.npmjs.org/protype/-/protype-0.7.0.tgz",
+          "resolved": "https://registry.npmjs.org/protype/-/protype-0.8.0.tgz",
           "dependencies": {
             "babel-runtime": {
               "version": "6.20.0",
@@ -1996,7 +2511,356 @@
             },
             "harden": {
               "version": "0.12.0",
-              "from": "harden@latest",
+              "from": "harden@>=0.12.0 <0.13.0",
+              "resolved": "https://registry.npmjs.org/harden/-/harden-0.12.0.tgz",
+              "dependencies": {
+                "babel-runtime": {
+                  "version": "6.20.0",
+                  "from": "babel-runtime@>=6.20.0 <7.0.0",
+                  "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                },
+                "core-js": {
+                  "version": "2.4.1",
+                  "from": "core-js@>=2.4.0 <3.0.0",
+                  "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                },
+                "regenerator-runtime": {
+                  "version": "0.10.1",
+                  "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                  "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                }
+              }
+            },
+            "regenerator-runtime": {
+              "version": "0.10.1",
+              "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+              "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+            }
+          }
+        }
+      }
+    },
+    "kloak": {
+      "version": "0.0.0",
+      "from": "kloak@latest",
+      "resolved": "https://registry.npmjs.org/kloak/-/kloak-0.0.0.tgz",
+      "dependencies": {
+        "falzy": {
+          "version": "0.7.0",
+          "from": "falzy@latest",
+          "resolved": "https://registry.npmjs.org/falzy/-/falzy-0.7.0.tgz",
+          "dependencies": {
+            "babel-runtime": {
+              "version": "6.20.0",
+              "from": "babel-runtime@>=6.20.0 <7.0.0",
+              "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+            },
+            "core-js": {
+              "version": "2.4.1",
+              "from": "core-js@>=2.4.0 <3.0.0",
+              "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+            },
+            "protype": {
+              "version": "0.7.0",
+              "from": "protype@>=0.7.0 <0.8.0",
+              "resolved": "https://registry.npmjs.org/protype/-/protype-0.7.0.tgz",
+              "dependencies": {
+                "babel-runtime": {
+                  "version": "6.20.0",
+                  "from": "babel-runtime@>=6.20.0 <7.0.0",
+                  "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                },
+                "cemento": {
+                  "version": "0.5.0",
+                  "from": "cemento@>=0.5.0 <0.6.0",
+                  "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.5.0.tgz",
+                  "dependencies": {
+                    "babel-runtime": {
+                      "version": "6.20.0",
+                      "from": "babel-runtime@>=6.20.0 <7.0.0",
+                      "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                    },
+                    "core-js": {
+                      "version": "2.4.1",
+                      "from": "core-js@>=2.4.0 <3.0.0",
+                      "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                    },
+                    "harden": {
+                      "version": "0.12.0",
+                      "from": "harden@>=0.12.0 <0.13.0",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.12.0.tgz",
+                      "dependencies": {
+                        "babel-runtime": {
+                          "version": "6.20.0",
+                          "from": "babel-runtime@>=6.20.0 <7.0.0",
+                          "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                        },
+                        "core-js": {
+                          "version": "2.4.1",
+                          "from": "core-js@>=2.4.0 <3.0.0",
+                          "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                        },
+                        "regenerator-runtime": {
+                          "version": "0.10.1",
+                          "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                          "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                        }
+                      }
+                    },
+                    "regenerator-runtime": {
+                      "version": "0.10.1",
+                      "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                      "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                    }
+                  }
+                },
+                "core-js": {
+                  "version": "2.4.1",
+                  "from": "core-js@>=2.4.0 <3.0.0",
+                  "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                },
+                "harden": {
+                  "version": "0.12.0",
+                  "from": "harden@latest",
+                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.12.0.tgz",
+                  "dependencies": {
+                    "babel-runtime": {
+                      "version": "6.20.0",
+                      "from": "babel-runtime@>=6.20.0 <7.0.0",
+                      "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                    },
+                    "core-js": {
+                      "version": "2.4.1",
+                      "from": "core-js@>=2.4.0 <3.0.0",
+                      "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                    },
+                    "regenerator-runtime": {
+                      "version": "0.10.1",
+                      "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                      "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                    }
+                  }
+                },
+                "regenerator-runtime": {
+                  "version": "0.10.1",
+                  "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                  "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                }
+              }
+            },
+            "regenerator-runtime": {
+              "version": "0.10.1",
+              "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+              "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+            }
+          }
+        },
+        "harden": {
+          "version": "0.12.0",
+          "from": "harden@latest",
+          "resolved": "https://registry.npmjs.org/harden/-/harden-0.12.0.tgz",
+          "dependencies": {
+            "babel-runtime": {
+              "version": "6.20.0",
+              "from": "babel-runtime@>=6.20.0 <7.0.0",
+              "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+            },
+            "core-js": {
+              "version": "2.4.1",
+              "from": "core-js@>=2.4.0 <3.0.0",
+              "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+            },
+            "regenerator-runtime": {
+              "version": "0.10.1",
+              "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+              "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+            }
+          }
+        },
+        "protype": {
+          "version": "0.8.0",
+          "from": "protype@latest",
+          "resolved": "https://registry.npmjs.org/protype/-/protype-0.8.0.tgz",
+          "dependencies": {
+            "babel-runtime": {
+              "version": "6.20.0",
+              "from": "babel-runtime@>=6.20.0 <7.0.0",
+              "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+            },
+            "cemento": {
+              "version": "0.5.0",
+              "from": "cemento@>=0.5.0 <0.6.0",
+              "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.5.0.tgz",
+              "dependencies": {
+                "babel-runtime": {
+                  "version": "6.20.0",
+                  "from": "babel-runtime@>=6.20.0 <7.0.0",
+                  "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                },
+                "core-js": {
+                  "version": "2.4.1",
+                  "from": "core-js@>=2.4.0 <3.0.0",
+                  "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                },
+                "harden": {
+                  "version": "0.12.0",
+                  "from": "harden@>=0.12.0 <0.13.0",
+                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.12.0.tgz",
+                  "dependencies": {
+                    "babel-runtime": {
+                      "version": "6.20.0",
+                      "from": "babel-runtime@>=6.20.0 <7.0.0",
+                      "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                    },
+                    "core-js": {
+                      "version": "2.4.1",
+                      "from": "core-js@>=2.4.0 <3.0.0",
+                      "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                    },
+                    "regenerator-runtime": {
+                      "version": "0.10.1",
+                      "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                      "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                    }
+                  }
+                },
+                "regenerator-runtime": {
+                  "version": "0.10.1",
+                  "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                  "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                }
+              }
+            },
+            "core-js": {
+              "version": "2.4.1",
+              "from": "core-js@>=2.4.0 <3.0.0",
+              "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+            },
+            "harden": {
+              "version": "0.12.0",
+              "from": "harden@>=0.12.0 <0.13.0",
+              "resolved": "https://registry.npmjs.org/harden/-/harden-0.12.0.tgz",
+              "dependencies": {
+                "babel-runtime": {
+                  "version": "6.20.0",
+                  "from": "babel-runtime@>=6.20.0 <7.0.0",
+                  "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                },
+                "core-js": {
+                  "version": "2.4.1",
+                  "from": "core-js@>=2.4.0 <3.0.0",
+                  "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                },
+                "regenerator-runtime": {
+                  "version": "0.10.1",
+                  "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                  "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                }
+              }
+            },
+            "regenerator-runtime": {
+              "version": "0.10.1",
+              "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+              "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+            }
+          }
+        }
+      }
+    },
+    "kount": {
+      "version": "0.4.0",
+      "from": "kount@latest",
+      "resolved": "https://registry.npmjs.org/kount/-/kount-0.4.0.tgz"
+    },
+    "letgo": {
+      "version": "0.6.0",
+      "from": "letgo@latest",
+      "resolved": "https://registry.npmjs.org/letgo/-/letgo-0.6.0.tgz",
+      "dependencies": {
+        "harden": {
+          "version": "0.13.0",
+          "from": "harden@latest",
+          "resolved": "https://registry.npmjs.org/harden/-/harden-0.13.0.tgz",
+          "dependencies": {
+            "babel-runtime": {
+              "version": "6.20.0",
+              "from": "babel-runtime@latest",
+              "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+            },
+            "core-js": {
+              "version": "2.4.1",
+              "from": "core-js@>=2.4.0 <3.0.0",
+              "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+            },
+            "regenerator-runtime": {
+              "version": "0.10.1",
+              "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+              "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+            }
+          }
+        },
+        "protype": {
+          "version": "0.8.0",
+          "from": "protype@latest",
+          "resolved": "https://registry.npmjs.org/protype/-/protype-0.8.0.tgz",
+          "dependencies": {
+            "babel-runtime": {
+              "version": "6.20.0",
+              "from": "babel-runtime@>=6.20.0 <7.0.0",
+              "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+            },
+            "cemento": {
+              "version": "0.5.0",
+              "from": "cemento@>=0.5.0 <0.6.0",
+              "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.5.0.tgz",
+              "dependencies": {
+                "babel-runtime": {
+                  "version": "6.20.0",
+                  "from": "babel-runtime@>=6.20.0 <7.0.0",
+                  "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                },
+                "core-js": {
+                  "version": "2.4.1",
+                  "from": "core-js@>=2.4.0 <3.0.0",
+                  "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                },
+                "harden": {
+                  "version": "0.12.0",
+                  "from": "harden@>=0.12.0 <0.13.0",
+                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.12.0.tgz",
+                  "dependencies": {
+                    "babel-runtime": {
+                      "version": "6.20.0",
+                      "from": "babel-runtime@>=6.20.0 <7.0.0",
+                      "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                    },
+                    "core-js": {
+                      "version": "2.4.1",
+                      "from": "core-js@>=2.4.0 <3.0.0",
+                      "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                    },
+                    "regenerator-runtime": {
+                      "version": "0.10.1",
+                      "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                      "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                    }
+                  }
+                },
+                "regenerator-runtime": {
+                  "version": "0.10.1",
+                  "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                  "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                }
+              }
+            },
+            "core-js": {
+              "version": "2.4.1",
+              "from": "core-js@>=2.4.0 <3.0.0",
+              "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+            },
+            "harden": {
+              "version": "0.12.0",
+              "from": "harden@>=0.12.0 <0.13.0",
               "resolved": "https://registry.npmjs.org/harden/-/harden-0.12.0.tgz",
               "dependencies": {
                 "babel-runtime": {
@@ -2762,6 +3626,123 @@
         }
       }
     },
+    "transpher": {
+      "version": "0.0.0",
+      "from": "transpher@latest",
+      "resolved": "https://registry.npmjs.org/transpher/-/transpher-0.0.0.tgz",
+      "dependencies": {
+        "falzy": {
+          "version": "0.7.0",
+          "from": "falzy@latest",
+          "resolved": "https://registry.npmjs.org/falzy/-/falzy-0.7.0.tgz",
+          "dependencies": {
+            "babel-runtime": {
+              "version": "6.20.0",
+              "from": "babel-runtime@>=6.20.0 <7.0.0",
+              "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+            },
+            "core-js": {
+              "version": "2.4.1",
+              "from": "core-js@>=2.4.0 <3.0.0",
+              "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+            },
+            "protype": {
+              "version": "0.7.0",
+              "from": "protype@>=0.7.0 <0.8.0",
+              "resolved": "https://registry.npmjs.org/protype/-/protype-0.7.0.tgz",
+              "dependencies": {
+                "babel-runtime": {
+                  "version": "6.20.0",
+                  "from": "babel-runtime@>=6.20.0 <7.0.0",
+                  "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                },
+                "cemento": {
+                  "version": "0.5.0",
+                  "from": "cemento@>=0.5.0 <0.6.0",
+                  "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.5.0.tgz",
+                  "dependencies": {
+                    "babel-runtime": {
+                      "version": "6.20.0",
+                      "from": "babel-runtime@>=6.20.0 <7.0.0",
+                      "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                    },
+                    "core-js": {
+                      "version": "2.4.1",
+                      "from": "core-js@>=2.4.0 <3.0.0",
+                      "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                    },
+                    "harden": {
+                      "version": "0.12.0",
+                      "from": "harden@>=0.12.0 <0.13.0",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.12.0.tgz",
+                      "dependencies": {
+                        "babel-runtime": {
+                          "version": "6.20.0",
+                          "from": "babel-runtime@>=6.20.0 <7.0.0",
+                          "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                        },
+                        "core-js": {
+                          "version": "2.4.1",
+                          "from": "core-js@>=2.4.0 <3.0.0",
+                          "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                        },
+                        "regenerator-runtime": {
+                          "version": "0.10.1",
+                          "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                          "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                        }
+                      }
+                    },
+                    "regenerator-runtime": {
+                      "version": "0.10.1",
+                      "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                      "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                    }
+                  }
+                },
+                "core-js": {
+                  "version": "2.4.1",
+                  "from": "core-js@>=2.4.0 <3.0.0",
+                  "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                },
+                "harden": {
+                  "version": "0.12.0",
+                  "from": "harden@latest",
+                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.12.0.tgz",
+                  "dependencies": {
+                    "babel-runtime": {
+                      "version": "6.20.0",
+                      "from": "babel-runtime@>=6.20.0 <7.0.0",
+                      "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                    },
+                    "core-js": {
+                      "version": "2.4.1",
+                      "from": "core-js@>=2.4.0 <3.0.0",
+                      "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                    },
+                    "regenerator-runtime": {
+                      "version": "0.10.1",
+                      "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                      "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                    }
+                  }
+                },
+                "regenerator-runtime": {
+                  "version": "0.10.1",
+                  "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                  "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                }
+              }
+            },
+            "regenerator-runtime": {
+              "version": "0.10.1",
+              "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+              "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+            }
+          }
+        }
+      }
+    },
     "truly": {
       "version": "0.5.0",
       "from": "truly@latest",
@@ -2953,9 +3934,9 @@
       }
     },
     "vound": {
-      "version": "0.4.0",
+      "version": "0.6.0",
       "from": "vound@latest",
-      "resolved": "https://registry.npmjs.org/vound/-/vound-0.4.0.tgz",
+      "resolved": "https://registry.npmjs.org/vound/-/vound-0.6.0.tgz",
       "dependencies": {
         "harden": {
           "version": "0.12.0",
@@ -2980,9 +3961,9 @@
           }
         },
         "protype": {
-          "version": "0.7.0",
+          "version": "0.8.0",
           "from": "protype@latest",
-          "resolved": "https://registry.npmjs.org/protype/-/protype-0.7.0.tgz",
+          "resolved": "https://registry.npmjs.org/protype/-/protype-0.8.0.tgz",
           "dependencies": {
             "babel-runtime": {
               "version": "6.20.0",
@@ -3040,7 +4021,227 @@
             },
             "harden": {
               "version": "0.12.0",
-              "from": "harden@latest",
+              "from": "harden@>=0.12.0 <0.13.0",
+              "resolved": "https://registry.npmjs.org/harden/-/harden-0.12.0.tgz",
+              "dependencies": {
+                "babel-runtime": {
+                  "version": "6.20.0",
+                  "from": "babel-runtime@>=6.20.0 <7.0.0",
+                  "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                },
+                "core-js": {
+                  "version": "2.4.1",
+                  "from": "core-js@>=2.4.0 <3.0.0",
+                  "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                },
+                "regenerator-runtime": {
+                  "version": "0.10.1",
+                  "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                  "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                }
+              }
+            },
+            "regenerator-runtime": {
+              "version": "0.10.1",
+              "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+              "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+            }
+          }
+        },
+        "raze": {
+          "version": "0.6.0",
+          "from": "raze@latest",
+          "resolved": "https://registry.npmjs.org/raze/-/raze-0.6.0.tgz",
+          "dependencies": {
+            "babel-runtime": {
+              "version": "6.20.0",
+              "from": "babel-runtime@>=6.20.0 <7.0.0",
+              "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+            },
+            "core-js": {
+              "version": "2.4.1",
+              "from": "core-js@>=2.4.0 <3.0.0",
+              "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+            },
+            "doubt": {
+              "version": "0.6.0",
+              "from": "doubt@>=0.6.0 <0.7.0",
+              "resolved": "https://registry.npmjs.org/doubt/-/doubt-0.6.0.tgz",
+              "dependencies": {
+                "babel-runtime": {
+                  "version": "6.20.0",
+                  "from": "babel-runtime@>=6.20.0 <7.0.0",
+                  "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                },
+                "cemento": {
+                  "version": "0.5.0",
+                  "from": "cemento@>=0.5.0 <0.6.0",
+                  "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.5.0.tgz",
+                  "dependencies": {
+                    "babel-runtime": {
+                      "version": "6.20.0",
+                      "from": "babel-runtime@>=6.20.0 <7.0.0",
+                      "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                    },
+                    "core-js": {
+                      "version": "2.4.1",
+                      "from": "core-js@>=2.4.0 <3.0.0",
+                      "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                    },
+                    "harden": {
+                      "version": "0.12.0",
+                      "from": "harden@>=0.12.0 <0.13.0",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.12.0.tgz",
+                      "dependencies": {
+                        "babel-runtime": {
+                          "version": "6.20.0",
+                          "from": "babel-runtime@>=6.20.0 <7.0.0",
+                          "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                        },
+                        "core-js": {
+                          "version": "2.4.1",
+                          "from": "core-js@>=2.4.0 <3.0.0",
+                          "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                        },
+                        "regenerator-runtime": {
+                          "version": "0.10.1",
+                          "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                          "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                        }
+                      }
+                    },
+                    "regenerator-runtime": {
+                      "version": "0.10.1",
+                      "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                      "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                    }
+                  }
+                },
+                "core-js": {
+                  "version": "2.4.1",
+                  "from": "core-js@>=2.4.0 <3.0.0",
+                  "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                },
+                "harden": {
+                  "version": "0.12.0",
+                  "from": "harden@>=0.12.0 <0.13.0",
+                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.12.0.tgz",
+                  "dependencies": {
+                    "babel-runtime": {
+                      "version": "6.20.0",
+                      "from": "babel-runtime@>=6.20.0 <7.0.0",
+                      "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                    },
+                    "core-js": {
+                      "version": "2.4.1",
+                      "from": "core-js@>=2.4.0 <3.0.0",
+                      "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                    },
+                    "regenerator-runtime": {
+                      "version": "0.10.1",
+                      "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                      "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                    }
+                  }
+                },
+                "protype": {
+                  "version": "0.7.0",
+                  "from": "protype@>=0.7.0 <0.8.0",
+                  "resolved": "https://registry.npmjs.org/protype/-/protype-0.7.0.tgz",
+                  "dependencies": {
+                    "babel-runtime": {
+                      "version": "6.20.0",
+                      "from": "babel-runtime@>=6.20.0 <7.0.0",
+                      "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                    },
+                    "cemento": {
+                      "version": "0.5.0",
+                      "from": "cemento@>=0.5.0 <0.6.0",
+                      "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.5.0.tgz",
+                      "dependencies": {
+                        "babel-runtime": {
+                          "version": "6.20.0",
+                          "from": "babel-runtime@>=6.20.0 <7.0.0",
+                          "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                        },
+                        "core-js": {
+                          "version": "2.4.1",
+                          "from": "core-js@>=2.4.0 <3.0.0",
+                          "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                        },
+                        "harden": {
+                          "version": "0.12.0",
+                          "from": "harden@>=0.12.0 <0.13.0",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.12.0.tgz",
+                          "dependencies": {
+                            "babel-runtime": {
+                              "version": "6.20.0",
+                              "from": "babel-runtime@>=6.20.0 <7.0.0",
+                              "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                            },
+                            "core-js": {
+                              "version": "2.4.1",
+                              "from": "core-js@>=2.4.0 <3.0.0",
+                              "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                            },
+                            "regenerator-runtime": {
+                              "version": "0.10.1",
+                              "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                              "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                            }
+                          }
+                        },
+                        "regenerator-runtime": {
+                          "version": "0.10.1",
+                          "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                          "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                        }
+                      }
+                    },
+                    "core-js": {
+                      "version": "2.4.1",
+                      "from": "core-js@>=2.4.0 <3.0.0",
+                      "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                    },
+                    "harden": {
+                      "version": "0.12.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.12.0.tgz",
+                      "dependencies": {
+                        "babel-runtime": {
+                          "version": "6.20.0",
+                          "from": "babel-runtime@>=6.20.0 <7.0.0",
+                          "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
+                        },
+                        "core-js": {
+                          "version": "2.4.1",
+                          "from": "core-js@>=2.4.0 <3.0.0",
+                          "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                        },
+                        "regenerator-runtime": {
+                          "version": "0.10.1",
+                          "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                          "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                        }
+                      }
+                    },
+                    "regenerator-runtime": {
+                      "version": "0.10.1",
+                      "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                      "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                    }
+                  }
+                },
+                "regenerator-runtime": {
+                  "version": "0.10.1",
+                  "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                  "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                }
+              }
+            },
+            "harden": {
+              "version": "0.12.0",
+              "from": "harden@>=0.12.0 <0.13.0",
               "resolved": "https://registry.npmjs.org/harden/-/harden-0.12.0.tgz",
               "dependencies": {
                 "babel-runtime": {

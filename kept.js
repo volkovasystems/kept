@@ -124,15 +124,17 @@ const kept = function kept( path, mode, synchronous ){
 	}else{
 		let self = zelf( this );
 
-		let catcher = letgo.bind( self )( function access( ){
+		let catcher = letgo.bind( self )( function later( cache ){
 			fs.access( path, mode,
-				function onAccess( error ){
+				function done( error ){
 					if( error ){
-						catcher.cache.callback( null, false );
+						cache.callback( null, false );
 
 					}else{
-						catcher.cache.callback( null,  true );
+						cache.callback( null,  true );
 					}
+
+					catcher.release( );
 				} );
 		} );
 

@@ -128,10 +128,10 @@ const kept = function kept( path, mode, synchronous ){
 			fs.access( path, mode,
 				function done( error ){
 					if( error ){
-						cache.callback( null, false );
+						cache.callback( error, false );
 
 					}else{
-						cache.callback( null,  true );
+						cache.callback( null, true );
 					}
 
 					catcher.release( );

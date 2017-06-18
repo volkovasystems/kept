@@ -85,7 +85,7 @@ const kept = function kept( path, mode, synchronous ){
 		@end-meta-configuration
 	*/
 
-	if( !protype( path, STRING ) || falzy( path ) ){
+	if( falzy( path ) || !protype( path, STRING ) ){
 		throw new Error( "invalid path" );
 	}
 
@@ -120,19 +120,15 @@ const kept = function kept( path, mode, synchronous ){
 		return true;
 
 	}else{
-		let self = zelf( this );
-
-		let catcher = letgo.bind( self )( function later( cache ){
+		let catcher = letgo.bind( zelf( this ) )( function later( callback ){
 			fs.access( path, mode,
 				function done( error ){
 					if( error ){
-						cache.callback( error, false );
+						return callback( error, false );
 
-					}else{
-						cache.callback( null, true );
 					}
 
-					catcher.release( );
+					return callback( null, true );
 				} );
 		} );
 

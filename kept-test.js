@@ -8,7 +8,5 @@ kept( "./package.json", READ )
 	( function exist( error, result ){
 		assert.equal( result, true, "should be true" );
 
-		console.log( "File exist" );
+		console.log( "ok" );
 	} );
-
-console.log( "ok" );

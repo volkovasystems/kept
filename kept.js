@@ -43,7 +43,9 @@
 	@end-module-configuration
 
 	@module-documentation:
-		Uses fs.accessSync to check for file existence.
+		Checks if the file exists.
+
+		Uses fs.accessSync/fs.access to check for file existence.
 	@end-module-documentation
 
 	@include:
@@ -53,7 +55,6 @@
 			"falzy": "falzy",
 			"harden": "harden",
 			"letgo": "letgo",
-			"protype": "protype",
 			"raze": "raze",
 			"zelf": "zelf"
 		}
@@ -65,7 +66,6 @@ const fs = require( "fs" );
 const falzy = require( "falzy" );
 const harden = require( "harden" );
 const letgo = require( "letgo" );
-const protype = require( "protype" );
 const raze = require( "raze" );
 const zelf = require( "zelf" );
 
@@ -85,7 +85,7 @@ const kept = function kept( path, mode, synchronous ){
 		@end-meta-configuration
 	*/
 
-	if( falzy( path ) || !protype( path, STRING ) ){
+	if( falzy( path ) || typeof path != "string" ){
 		throw new Error( "invalid path" );
 	}
 
@@ -120,19 +120,16 @@ const kept = function kept( path, mode, synchronous ){
 		return true;
 
 	}else{
-		let catcher = letgo.bind( zelf( this ) )( function later( callback ){
-			fs.access( path, mode,
-				function done( error ){
-					if( error ){
-						return callback( error, false );
+		return letgo.bind( zelf( this ) )( function later( callback ){
+			fs.access( path, mode, function done( error ){
+				if( error instanceof Error ){
+					callback( error, false );
 
-					}
-
-					return callback( null, true );
-				} );
+				}else{
+					callback( null, true );
+				}
+			} );
 		} );
-
-		return catcher;
 	}
 };
 
